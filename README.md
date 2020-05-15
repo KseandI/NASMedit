@@ -11,3 +11,4 @@ NASM | 2.14.02
 ld | 2.34
 file explorer | Dolphin 20.04.0
 python | 3.8.2
+PyQt | 5.14.2
