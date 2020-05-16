@@ -133,14 +133,14 @@ class Window(PyQt5.QtWidgets.QMainWindow):
             self.compileCode()
         print(out("./"+self.fileName))
     
-    def highlightText(self, txt: str) -> str:
-        text = txt
-        for i in syntax.NASMsyntax.keys():
-            for j in syntax.NASMsyntax[i]:
-                word = re.search(j, text)
-                if not word is None:
-                    pass#print("Word: "+word.group()+"\npos: "+str(word.start()))
-        return text
+    #def highlightText(self, txt: str) -> str:  # use regex to find text
+    #    text = txt
+    #    for i in syntax.NASMsyntax.keys():
+    #        for j in syntax.NASMsyntax[i]:
+    #            word = re.search(j, text)
+    #            if not word is None:
+    #                pass#print("Word: "+word.group()+"\npos: "+str(word.start()))
+    #    return text
         
 
 if __name__ == '__main__':
