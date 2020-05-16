@@ -1,11 +1,11 @@
 import sys
 import os
 from subprocess import PIPE, run
-import re
+#import re
 import PyQt5
 from UI import Ui_MainWindow
 import difflib
-import syntax
+#import syntax
 
 def out(command):
     result = run(command, stdout=PIPE, stderr=PIPE, universal_newlines=True, shell=True)
